@@ -221,7 +221,7 @@
 let roster = [];
 let randomIndex;
 let animating = false;
-let theMagicHour = [];
+let theClassics = [];
 let presto = 0;
 let peopleButton;
 let chapterButton;
@@ -230,8 +230,8 @@ let putNameHere = [];
 let premiere = true;
 
 function preload() {
-  for (let i = 0; i <= 15; i++) {
-    theMagicHour[i] = loadImage(`assets/Harry Houdini ${i}.PNG`);
+  for (let i = 0; i <= 2; i++) {
+    theClassics[i] = loadImage(`assets/Scan2019-10-19_${i}.jpg`);
   }
 }
 
@@ -259,21 +259,22 @@ function setup() {
   // button = createButton("Turn the page.");
   chapterButton = select("#bedTimeStory");
   chapterButton.mousePressed(buttonPressed);
-  chapterButton.position(windowWidth / 2, windowHeight - chapterButton.height);
+  chapterButton.position(windowWidth / 2, windowHeight - (2*chapterButton.height));
   peopleButton = select("#theProtagonists");
   peopleButton.mousePressed(theMoreTheMerrier);
-  peopleButton.position(windowWidth / 2 - peopleButton.width, windowHeight - peopleButton.height);
-  for (let i = 0; i < 3; i++) {
-    putNameHere.push(createInput());
+  peopleButton.position(windowWidth / 2 - peopleButton.width, windowHeight - (2*peopleButton.height));
+  for (let i = 0; i <= 2; i++) {
+    putNameHere.push(createInput("Add character here."));
     putNameHere[putNameHere.length - 1].parent("#characterNames");
+    putNameHere[putNameHere.length - 1].position(peopleButton.width*i, windowHeight - peopleButton.height);
   }
 }
 
 function draw() {
   if (animating == true) {
     clear();
-    image(theMagicHour[presto], windowWidth / 2, windowHeight / 2);
-    if (presto < theMagicHour.length - 1) {
+    image(theClassics[presto], windowWidth / 2, windowHeight / 2);
+    if (presto < theClassics.length - 1) {
       presto++;
       console.log(presto);
     } else {
@@ -296,7 +297,7 @@ function randomizer() {
     // console.log(roster[randomIndex]);
     stroke(0);
     fill(255);
-    image(random(theMagicHour), windowWidth / 2, windowHeight / 2);
+    image(random(theClassics), windowWidth / 2, windowHeight / 2);
     text(roster[randomIndex], 10, 400);
     roster.splice(randomIndex, 1);
   } else {
