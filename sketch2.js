@@ -227,6 +227,7 @@
 // let chapterButton;
 let pieceOfPaper;
 let checkList = [];
+let size = 
 // let premiere = true;
 
 // function preload() {
@@ -240,7 +241,10 @@ function setup() {
   pieceOfPaper.parent("#canvasDiv");
   background(0);
   for (let i = 0; i < 100; i++) {
-    checkList[i] = createCheckbox('check?').style('display','inline');
+    checkList[i] = createCheckbox('check?');
+    checkList[i].style('display','inline');
+    checkList[i].position(random(windowWidth),random(windowHeight));
+    checkList[i].changed(myCheckedEvent);
   }
 }
 
@@ -256,39 +260,3 @@ function draw() {
   //   }
   // }
 }
-
-function theMoreTheMerrier() {
-  // putNameHere.push(createCheckbox(createInput()).style('display','inline'));
-  // putNameHere[putNameHere.length - 1].parent("#characterNames");
-}
-//
-// function randomizer() {
-//   animating = false;
-//   if (roster[0]) {
-//     // background(random(204, 255));
-//     clear();
-//     randomIndex = int(random(roster.length));
-//     // console.log(roster[randomIndex]);
-//     stroke(0);
-//     fill(255);
-//     image(random(theMagicHour), windowWidth / 2, windowHeight / 2);
-//     text(roster[randomIndex], 10, 400);
-//     roster.splice(randomIndex, 1);
-//   } else {
-//     background(random(204, 255));
-//     noStroke();
-//     fill('#662d91');
-//     text("The End.", 10, 400);
-//   }
-// }
-//
-// function buttonPressed() {
-//   if (premiere) {
-//     for (let i = 0; i < putNameHere.length; i++) {
-//       roster.push(putNameHere[i].value());
-//     }
-//     premiere = false;
-//   }
-//   animating = true;
-//   setTimeout(randomizer, 2000);
-// }
