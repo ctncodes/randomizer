@@ -226,7 +226,7 @@
 // let peopleButton;
 // let chapterButton;
 let pieceOfPaper;
-let putNameHere = [];
+let checkList = [];
 // let premiere = true;
 
 // function preload() {
@@ -239,9 +239,8 @@ function setup() {
   pieceOfPaper = createCanvas(windowWidth, windowHeight);
   pieceOfPaper.parent("#canvasDiv");
   background(0);
-  for (let i = 0; i < 99; i++) {
-    putNameHere.push(createInput());
-    putNameHere[putNameHere.length - 1].parent("#characterNames");
+  for (let i = 0; i < 100; i++) {
+    checkList[i] = createCheckbox('check?').style('display','inline');
   }
 }
 
@@ -259,8 +258,8 @@ function draw() {
 }
 
 function theMoreTheMerrier() {
-  putNameHere.push(createInput());
-  putNameHere[putNameHere.length - 1].parent("#characterNames");
+  // putNameHere.push(createCheckbox(createInput()).style('display','inline'));
+  // putNameHere[putNameHere.length - 1].parent("#characterNames");
 }
 //
 // function randomizer() {
