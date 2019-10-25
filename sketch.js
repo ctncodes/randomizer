@@ -266,7 +266,7 @@ function setup() {
   for (let i = 0; i <= 2; i++) {
     putNameHere.push(createInput("Add character here."));
     putNameHere[putNameHere.length - 1].parent("#characterNames");
-    putNameHere[putNameHere.length - 1].position(peopleButton.width*i, windowHeight - peopleButton.height);
+    // putNameHere[putNameHere.length - 1].position(peopleButton.width*i, windowHeight - peopleButton.height);
   }
 }
 
@@ -284,7 +284,7 @@ function draw() {
 }
 
 function theMoreTheMerrier() {
-  putNameHere.push(createInput());
+  putNameHere.push(createInput("Add character here."));
   putNameHere[putNameHere.length - 1].parent("#characterNames");
 }
 
