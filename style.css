@@ -13,3 +13,7 @@ canvas {
   padding: 1px;
   background-color: #662d91;
 }
+#characterNames {
+  position: absolute;
+  top: 748px;
+}
