@@ -230,8 +230,8 @@ let putNameHere = [];
 let premiere = true;
 
 function preload() {
-  for (let i = 0; i <= 2; i++) {
-    theClassics[i] = loadImage(`assets/Scan2019-10-19_${i}.jpg`);
+  for (let i = 0; i <= 17; i++) {
+    theClassics[i] = loadImage(`assets/Cars_${i}.jpg`);
   }
 }
 
