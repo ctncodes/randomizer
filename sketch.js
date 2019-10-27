@@ -253,8 +253,10 @@ function setup() {
   imageMode(CENTER);
   frameRate(8);
 
-  text("Enjoy Harold &", 25, 325);
-  text("Chi's Fairy Tale", 25, 525);
+  // text("Enjoy Harold &", 25, 325);
+  text("Harold & Chi's", 25, 325);
+  // text("Chi's Fairy Tale.", 25, 525);
+  text("Bedtime Story.", 25, 525);
 
   // button = createButton("Turn the page.");
   chapterButton = select("#bedTimeStory");
