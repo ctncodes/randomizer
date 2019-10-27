@@ -259,9 +259,11 @@ function setup() {
   // button = createButton("Turn the page.");
   chapterButton = select("#bedTimeStory");
   chapterButton.mousePressed(buttonPressed);
+  // chapterButton.parent("#characterNames2");
   chapterButton.position(windowWidth / 2, windowHeight - (2*chapterButton.height));
   peopleButton = select("#theProtagonists");
   peopleButton.mousePressed(theMoreTheMerrier);
+  // peopleButton.parent("#characterNames2");
   peopleButton.position(windowWidth / 2 - peopleButton.width, windowHeight - (2*peopleButton.height));
   for (let i = 0; i <= 2; i++) {
     putNameHere.push(createInput("Add character here."));
