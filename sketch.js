@@ -233,6 +233,8 @@ function preload() {
   for (let i = 0; i <= 17; i++) {
     theClassics[i] = loadImage(`assets/Cars_${i}.jpg`);
   }
+  soundFormats('mp3');
+  sparkles = loadSound('assets/Magical Chime Descend.mp3');
 }
 
 function setup() {
@@ -313,6 +315,8 @@ function randomizer() {
 }
 
 function buttonPressed() {
+  sparkles.setVolume(1);
+  sparkles.play();
   if (premiere) {
     for (let i = 0; i < putNameHere.length; i++) {
       roster.push(putNameHere[i].value());
@@ -320,5 +324,5 @@ function buttonPressed() {
     premiere = false;
   }
   animating = true;
-  setTimeout(randomizer, 2000);
+  setTimeout(randomizer, 4000);
 }
