@@ -234,7 +234,7 @@ function preload() {
     theClassics[i] = loadImage(`assets/Cars_${i}.jpg`);
   }
   soundFormats('mp3');
-  sparkles = loadSound('assets/Magical Chime Descend.mp3');
+  sparkles = loadSound('assets/Little Einsteins - The Harp!.mp3');
 }
 
 function setup() {
@@ -324,5 +324,5 @@ function buttonPressed() {
     premiere = false;
   }
   animating = true;
-  setTimeout(randomizer, 4000);
+  setTimeout(randomizer, 2130);
 }
