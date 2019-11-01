@@ -308,7 +308,7 @@ function randomizer() {
     roster.splice(randomIndex, 1);
   } else {
     background(random(204, 255));
-    noStroke();
+    stroke("#ffd700");
     fill('#662d91');
     text("The End.", 10, 400);
   }
