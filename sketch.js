@@ -221,7 +221,7 @@
 let roster = [];
 let randomIndex;
 let animating = false;
-let theClassics = [];
+let theMagicHour = [];
 let presto = 0;
 let peopleButton;
 let chapterButton;
@@ -230,8 +230,8 @@ let putNameHere = [];
 let premiere = true;
 
 function preload() {
-  for (let i = 0; i <= 17; i++) {
-    theClassics[i] = loadImage(`assets/Cars_${i}.jpg`);
+  for (let i = 0; i <= 31; i++) {
+    theMagicHour[i] = loadImage(`assets/Harry Houdini ${i}.PNG`);
   }
   soundFormats('mp3');
   sparkles = loadSound('assets/Little Einsteins - The Harp!.mp3');
@@ -279,8 +279,8 @@ function setup() {
 function draw() {
   if (animating == true) {
     clear();
-    image(theClassics[presto], windowWidth / 2, windowHeight / 2);
-    if (presto < theClassics.length - 1) {
+    image(theMagicHour[presto], windowWidth / 2, windowHeight / 2);
+    if (presto < theMagicHour.length - 1) {
       presto++;
       console.log(presto);
     } else {
@@ -303,7 +303,7 @@ function randomizer() {
     // console.log(roster[randomIndex]);
     stroke(0);
     fill(255);
-    image(random(theClassics), windowWidth / 2, windowHeight / 2);
+    image(random(theMagicHour), windowWidth / 2, windowHeight / 2);
     text(roster[randomIndex], 10, 400);
     roster.splice(randomIndex, 1);
   } else {
