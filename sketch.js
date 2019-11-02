@@ -240,7 +240,8 @@ function preload() {
 function setup() {
   pieceOfPaper = createCanvas(windowWidth, windowHeight);
   pieceOfPaper.parent("#canvasDiv");
-  loadImage('assets/Harry Houdini - New York, 1898.png');
+  loadImage('assets/Harry Houdini - New York, 1898.png', theGreatHoudini => {
+    image(img, 0, 0););
   // background("#858FFF");
   // strokeWeight(10);
   // line(windowWidth / 8, 68, windowWidth / 8, windowHeight - 68);
