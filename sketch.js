@@ -231,7 +231,7 @@ let premiere = true;
 
 function preload() {
   for (let i = 0; i <= 31; i++) {
-    theMagicHour[i] = loadImage(`assets/Harry Houdini ${i}.PNG`);
+    theMagicHour[i] = loadImage(`assets/Harry Houdini ${i}.png`);
   }
   soundFormats('mp3');
   sparkles = loadSound('assets/Little Einsteins - The Harp!.mp3');
