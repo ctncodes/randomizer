@@ -230,7 +230,7 @@ let putNameHere = [];
 let premiere = true;
 
 function preload() {
-  for (let i = 0; i <= 31; i++) {
+  for (let i = 0; i <= 19; i++) {
     theMagicHour[i] = loadImage(`assets/Harry Houdini ${i}.PNG`);
   }
   soundFormats('mp3');
@@ -253,7 +253,7 @@ function setup() {
   textSize(180);
   fill('#662d91');
   imageMode(CENTER);
-  frameRate(8);
+  frameRate(10);
 
   // text("Enjoy Harold &", 25, 325);
   text("Harold & Chi's", 25, 325);
