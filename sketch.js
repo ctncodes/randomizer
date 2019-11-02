@@ -240,17 +240,15 @@ function preload() {
 function setup() {
   pieceOfPaper = createCanvas(windowWidth, windowHeight);
   pieceOfPaper.parent("#canvasDiv");
-  loadImage('assets/Harry Houdini - New York, 1898.png', theGreatHoudini => {
-    image(img, 0, 0););
-  // background("#858FFF");
-  // strokeWeight(10);
-  // line(windowWidth / 8, 68, windowWidth / 8, windowHeight - 68);
-  // line(windowWidth / 4, 34, windowWidth / 4, windowHeight - 34);
-  // line(windowWidth * 3 / 8, 68, windowWidth * 3 / 8, windowHeight - 68);
-  // line(windowWidth / 2, 34, windowWidth / 2, windowHeight - 34);
-  // line(windowWidth * 5 / 8, 68, windowWidth * 5 / 8, windowHeight - 68);
-  // line(windowWidth * 3 / 4, 34, windowWidth * 3 / 4, windowHeight - 34);
-  // line(windowWidth * 7 / 8, 68, windowWidth * 7 / 8, windowHeight - 68);
+  background("#858FFF");
+  strokeWeight(10);
+  line(windowWidth / 8, 68, windowWidth / 8, windowHeight - 68);
+  line(windowWidth / 4, 34, windowWidth / 4, windowHeight - 34);
+  line(windowWidth * 3 / 8, 68, windowWidth * 3 / 8, windowHeight - 68);
+  line(windowWidth / 2, 34, windowWidth / 2, windowHeight - 34);
+  line(windowWidth * 5 / 8, 68, windowWidth * 5 / 8, windowHeight - 68);
+  line(windowWidth * 3 / 4, 34, windowWidth * 3 / 4, windowHeight - 34);
+  line(windowWidth * 7 / 8, 68, windowWidth * 7 / 8, windowHeight - 68);
   stroke("#ffd700");
   textSize(180);
   fill('#662d91');
