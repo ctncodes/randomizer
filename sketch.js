@@ -282,7 +282,7 @@ function draw() {
     image(theMagicHour[presto], windowWidth / 2, windowHeight / 2);
     if (presto < theMagicHour.length - 1) {
       presto++;
-      console.log(presto);
+      // console.log(presto);
     } else {
       presto = 0;
     }
