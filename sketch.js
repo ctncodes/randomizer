@@ -230,7 +230,7 @@ let putNameHere = [];
 let premiere = true;
 
 function preload() {
-  for (let i = 0; i <= 19; i++) {
+  for (let i = 0; i <= 23; i++) {
     theMagicHour[i] = loadImage(`assets/Harry_Houdini_${i}.jpg`);
   }
   soundFormats('mp3');
