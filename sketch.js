@@ -326,3 +326,7 @@ function buttonPressed() {
   animating = true;
   setTimeout(randomizer, 2130);
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
