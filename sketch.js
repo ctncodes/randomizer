@@ -301,16 +301,19 @@ function randomizer() {
     clear();
     randomIndex = int(random(roster.length));
     // console.log(roster[randomIndex]);
-    stroke("#ffd700");
-    fill('#662d91');
+    stroke("#000000");
+    fill('#E4A5D1');
     image(random(theMagicHour), windowWidth / 2, windowHeight / 2);
     text(roster[randomIndex], 10, 400);
     roster.splice(randomIndex, 1);
   } else {
-    background(random(204, 255));
+    background(255);
     stroke("#ffd700");
     fill('#662d91');
     text("The End.", 10, 400);
+    // stroke("#ffffff");
+    // fill('#ffffff');
+    // text("The End.", windowWidth - 750, windowHeight - 10);
   }
 }
 
