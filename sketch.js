@@ -230,8 +230,8 @@ let putNameHere = [];
 let premiere = true;
 
 function preload() {
-  for (let i = 0; i <= 23; i++) {
-    theMagicHour[i] = loadImage(`assets/Harry_Houdini_${i}.jpg`);
+  for (let i = 0; i <= 4; i++) {
+    theMagicHour[i] = loadImage(`assets/HFT${i}.png`);
   }
   soundFormats('mp3');
   sparkles = loadSound('assets/Little Einsteins - The Harp!.mp3');
